@@ -1,0 +1,42 @@
+<html>
+
+<head>
+
+<title>Sayfa Yönelendirme</title> 
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-9">
+
+<META HTTP-EQUIV="Refresh" CONTENT="3; URL = https://discord.gg/CQypEW64Xz">
+
+</head>
+
+
+
+<body>
+
+
+<script>
+     var zaman = 3;
+ var geriSay = setInterval(function(){
+  zaman--;
+  document.getElementById("goster").textContent = zaman;
+  if(zaman <= 0){
+      clearInterval(geriSay);
+  }
+},1000);
+</script>
+<center>
+<p> Discorda <span id="goster">3 </span> Saniye Sonra Yönlendirileceksiniz</p>
+<style>
+    body{
+        background-color: #212121;
+    }
+    p{
+        margin-top: 400px;
+        color: white;
+        font-size: 70px;
+
+    }
+</style>
+</center>
+</body>
